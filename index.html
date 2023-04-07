@@ -7,30 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Dashboard | ZenDo.</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header box">
-            <div class="profile">
-                <div class="name">Peter Tran-Truong</div>
-                <div class="title">Software Developer</div>
+    <div class="main-container">
+        <div class="grid">
+            <div class="header box">
+                <img class="avatar" src="" alt="">
+                <div class="profile">
+                    <div class="name">Peter Tran-Truong</div>
+                    <div class="title">Software Developer</div>
+                </div>
+                <div class="search-bar"></div>
             </div>
-            <div class="search-bar"></div>
-        </div>
-        <div class="side-bar box">
-            <div class="logo">ZenDo.</div>
-            <div class="nav">
-                <div>Dashboard</div>
-                <div>Projects</div>
-                <div>Schedule</div>
-                <div>Settings</div>
+
+            <div class="side-bar box">
+                <div class="logo-container">
+                    <img class="logo" src="images/logo.png"><span class="logo">ZenDo.</span>
+                </div>
+                <div class="nav">
+                    <div class="nav-options">
+                        <span class="material-symbols-outlined">home</span>
+                        <span class="nav-option">Home</span>
+                    </div>
+                    <div class="nav-options">
+                        <span class="material-symbols-outlined selected">space_dashboard</span>
+                        <span class="nav-option selected">Projects</span>
+                    </div>
+                    <div class="nav-options">
+                        <span class="material-symbols-outlined">calendar_month</span>
+                        <span class="nav-option">Schedule</span>
+                    </div>
+                    <div class="nav-options">
+                        <span class="material-symbols-outlined">settings</span>
+                        <span class="nav-option">Settings</span>
+                    </div>
+                </div>
+                <div class="side-bar-bottom">
+                    <div class="info">
+                        <span class="material-symbols-outlined">info</span>Help & information
+                    </div>
+                    <div class="log-out">
+                        <span class="material-symbols-outlined">logout</span>Log out
+                    </div>
+                </div>
             </div>
+            <div class="middle-card box"></div>
+            <div class="right-card1 box"></div>
+            <div class="right-card2 box"></div>
         </div>
-        <div class="middle-card box"></div>
-        <div class="right-card1 box"></div>
-        <div class="right-card2 box"></div>
         <footer class="footer">Copyright&nbsp &copy &nbsp<a href="https://github.com/pdtru">pdtru</a>&nbsp;&nbsp;2023
         </footer>
     </div>
