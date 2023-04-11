@@ -40,14 +40,13 @@ body {
 }
 
 .left {
-    margin-left: 48px;
+    margin-left: 3vw;
     display: flex;
-    gap: 52px;
+    gap: 3vw;
 }
 
 .header {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     grid-column: 2 / span 2;
@@ -90,15 +89,13 @@ body {
 .date-value {
     color: #212427;
     font-size: 70%;
-    font-weight: 500;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .right {
     display: flex;
     align-items: center;
-    gap: 52px;
-    margin-right: 48px;
+    margin-right: 3vw;
+    gap: 3vw;
 }
 
 .search-bar {
@@ -119,11 +116,6 @@ body {
 
 .search-bar:focus {
     outline: none;
-}
-
-.notifications {
-    display: flex;
-    gap: 16px;
 }
 
 .material-symbols-outlined.header-icon {
@@ -215,14 +207,18 @@ body {
 .sign-up {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 4vh;
     grid-row: 2 / span 2;
 }
 
 .sign-up-header-container {
     display: flex;
+    align-self: flex-start;
     flex-direction: column;
-    gap: 6px;
-    margin: 16px;
+    gap: 8px;
+    margin-top: 24px;
+    margin-left: 16px;
 }
 
 .project {
@@ -235,8 +231,48 @@ body {
 }
 
 .sign-up-img {
-    height: 100%;
+    border-radius: 16px;
+    height: 90%;
     width: 100%;
+}
+
+.sign-up-buttons {
+    display: flex;
+    gap: 24px
+}
+
+.demo {
+    background-color: #666af6;
+    border-style: none;
+    border-radius: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+.code {
+    background-color: #666af6;
+    border-style: none;
+    border-radius: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.material-symbols-outlined.button {
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    gap: 6px;
+}
+
+.button-text {
+    color: #f5f5f5;
+    font-size: 70%;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.3)
 }
 
 .calculator {
