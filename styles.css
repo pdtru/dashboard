@@ -39,7 +39,7 @@ body {
     border-radius: 16px;
 }
 
-.left {
+.left-container {
     margin-left: 3vw;
     display: flex;
     gap: 3vw;
@@ -47,6 +47,7 @@ body {
 
 .header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     grid-column: 2 / span 2;
@@ -91,7 +92,7 @@ body {
     font-size: 70%;
 }
 
-.right {
+.right-container {
     display: flex;
     align-items: center;
     margin-right: 3vw;
@@ -204,7 +205,7 @@ body {
     font-size: 90%;
 }
 
-.sign-up {
+.sign-up-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,7 +213,7 @@ body {
     grid-row: 2 / span 2;
 }
 
-.sign-up-header-container {
+.project-header-container {
     display: flex;
     align-self: flex-start;
     flex-direction: column;
@@ -226,7 +227,7 @@ body {
     font-size: x-small;
 }
 
-.sign-up-header {
+.project-header {
     font-size: large;
 }
 
@@ -245,15 +246,12 @@ body {
     background-color: #666af6;
     border-style: none;
     border-radius: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
 }
 
 .code {
     background-color: #666af6;
     border-style: none;
     border-radius: 16px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .material-symbols-outlined.button {
@@ -262,6 +260,7 @@ body {
     align-items: center;
     margin: 0;
     gap: 6px;
+    padding: 10px;
 }
 
 .button-text {
@@ -275,11 +274,39 @@ button:hover {
     box-shadow: 3px 3px rgba(0, 0, 0, 0.3)
 }
 
-.calculator {
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
     grid-row: 2 / span 1;
 }
 
-.rps {
+.calculator-buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 16px;
+    width: 100%;
+    gap: 24px;
+}
+
+.calculator-buttons {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 16px;
+}
+
+.calculator-img {
+    border-radius: 16px;
+    height: 20vh;
+}
+
+.rps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4vh;
     grid-row: 3 / span 1;
 }
 
