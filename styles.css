@@ -282,21 +282,21 @@ button:hover {
     grid-row: 2 / span 1;
 }
 
-.calculator-buttons-container {
+.project-buttons-container {
     display: flex;
     justify-content: space-evenly;
     padding-bottom: 16px;
     width: 100%;
 }
 
-.calculator-buttons {
+.project-buttons {
     display: flex;
     flex-direction: column;
     align-self: center;
     gap: 24px;
 }
 
-.calculator-img {
+.project-img {
     border-radius: 16px;
     height: 20vh;
 }
